@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+}
+*{
+    scroll-behavior: smooth;
+}
+nav {
+    
+    height: 4vmax;
+    display: flex  ;
+    align-items: center;
+    box-shadow:0 0 10px rgb(146, 140, 140);
+    position: sticky;
+    top: 0%;
+    background-color: white ;
+    z-index: 1000;
+} 
+    
+
+.left
+{
+   
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.left>a {
+    text-decoration: none;
+    color: crimson;
+    font-size: 2vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.right{
+    
+    width: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+.mid
+{
+   
+    width: 60%;
+    display: flex;
+    align-self: stretch;
+    justify-content: space-evenly;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mid > a{
+    text-decoration: none;
+    color: black;
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.mid > a:hover{
+    color: crimson;
+    border-bottom: 2px solid crimson;
+}
+
+.right>img{
+    width: 3max;
+    margin: 1vmax;
+    cursor: pointer;
+}
+.home{
+    display: flex;
+    height: 90vh;
+    background-image: linear-gradient(to right,rgb(184, 184, 228),rgb(236, 171, 182));
+}
+.container{
+    width: 100%;
+    
+    
+
+}
+#rightcontainer{
+    display: flex;
+    justify-content: flex-end ;
+}
+#rightcontainer>img{
+    display: flex;
+    margin-right: 18%;
+    filter: drop-shadow(0 0 10px black);
+
+}
+#haveme{
+    display: flex;
+    flex-direction:column;
+    padding: 2vmax;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    
+   }
+
+   #haveme>h1{
+    font-size: 4vmax;
+   border-bottom:2px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+#haveme>h2{
+    font-size: 2vmax;
+    margin-top: -7%;
+    font-family:sans-serif ;
+    
+    
+}
+#haveme>p{
+    font-size: 1.3vmax;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#haveme>button{
+    width: 10vmax;
+    padding: 0.5vmax;
+    border: none;
+    border-radius: 2vmax;
+    background-color: crimson;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+
+}
+#haveme>button:hover{
+    background-color: white;
+    color: crimson;
+}
+/*------------------------------------------------*/
+
+#products>h1{
+    text-align: center;
+    margin: 5vmax auto;
+    font-size: 2.5vmax;
+    border-bottom: 5px solid crimson;
+    padding: 1vmax;
+    width: 30vw;
+}
+.productsContainer{
+   
+    display: flex;
+    margin:auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+
+}
+/*-----------------------------------------------------*/
+.product{
+   
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 30vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:1vmax ;
+    
+}
+.product > img{
+    height: 25vmax;
+
+}
+.product>h4{
+    font-size: larger;
+    margin: 0%;
+}
+.product>h5{
+    margin: 0%;
+    font-size: larger;
+}
+.product:hover{
+     transform: translateY(-15px);
+
+}
+
+footer{
+    margin-top: 2vmax;
+    align-items: center;
+    background-color: black;
+    color: wheat;
+    display: flex;
+}
+.leftfooter{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+}
+.leftfooter>h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.leftfooter>img{
+    width: 10vmax;
+    padding: 2vmax;
+    cursor: pointer;
+}
+.leftfooter>p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.midfooter{
+    width: 60%;
+    color: white;
+}
+.midfooter>h1{
+    display: flex;
+    justify-content: center;
+     color: crimson;
+    font-size: 4vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.midfooter>P{
+    max-width: 40%;
+    margin: 1vmax;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.rightfooter{
+    width: 20%;
+    display: flex;
+    color: grey;
+    flex-direction: column;
+    align-items: center;
+}
+.rightfooter>h4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4vmax;
+    text-decoration: underline;
+
+}
+
+.rightfooter>a{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5vmax;
+    margin: 1vmax;
+    color: grey;
+}
